@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1580</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IMS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="LogOut_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton{
+
+	
+
+	font: 22pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="asert.qrc">
+           <normaloff>:/Images/may.ico</normaloff>:/Images/may.ico</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>323</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>19</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color : red;</string>
+           </property>
+           <property name="text">
+            <string>                         MAYTECH SYSTEMS</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>24</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color :  blue;</string>
+           </property>
+           <property name="text">
+            <string>INVENTORY MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>322</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="authLogin_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton{
+
+	
+
+	font: 22pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/Images/login.png</normalon>
+          </iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>90</width>
+           <height>90</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>26</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>DATA HIDDEN</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTableView" name="tableView">
+          <property name="styleSheet">
+           <string notr="true">QTableView {
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    padding: 0;
+    gridline-color: #d9d9d9;
+}
+
+QTableView::item {
+    padding: 5px;
+    border: none;
+}
+
+QTableView::item:selected {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #f2f2f2;
+    color: #333333;
+    padding: 5px;
+   font-weight: bold;
+   font-size: 18px;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    min-width: 80px;
+    min-height: 30px;
+    font-family: Times New Roman;
+}
+
+
+
+QHeaderView::section:first {
+    border-top-left-radius: 5px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 5px;
+    border-right: none;
+}
+
+QHeaderView::section:middle {
+    border-right: none;
+}
+
+QTableView::horizontalHeader {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+QTableView::verticalHeader {
+    border-right: 1px solid #d9d9d9;
+}
+
+QHeaderView::section:horizontal {
+    background-color: #e2e2e2;
+    border-top: 1px solid #9d9d9d;
+}
+
+QHeaderView::section:horizontal:pressed {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_editPart">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+
+	
+
+	font: 18pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+        </property>
+        <property name="text">
+         <string>EDIT</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_del_partt">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+
+	
+
+	font: 18pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+        </property>
+        <property name="text">
+         <string>DELETE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>USER NAME : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string> USER TYPE : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_refresh">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+
+	
+
+	font: 18pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="asert.qrc">
+          <normaloff>:/Images/refresh.png</normaloff>:/Images/refresh.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_search">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="asert.qrc">
+          <normaloff>:/Images/search.png</normaloff>:/Images/search.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>45</width>
+          <height>45</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+
+	
+
+	font: 18pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+        </property>
+        <property name="text">
+         <string>EXPORT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1580</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionView_Invoices"/>
+    <addaction name="actionView_Parts_Tracker"/>
+    <addaction name="actionView_Parts_Quantity"/>
+   </widget>
+   <widget class="QMenu" name="menuProjects">
+    <property name="title">
+     <string>Projects</string>
+    </property>
+    <addaction name="actionView_Project"/>
+    <addaction name="actionManage_Project"/>
+   </widget>
+   <widget class="QMenu" name="menuRecipients">
+    <property name="title">
+     <string>Recipients</string>
+    </property>
+    <addaction name="actionView_Recipients"/>
+    <addaction name="actionManage_recipients"/>
+   </widget>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>User</string>
+    </property>
+    <addaction name="actionChange_Login_Credentials"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuSlips">
+    <property name="title">
+     <string>Slips</string>
+    </property>
+    <widget class="QMenu" name="menuInward_Store_Note">
+     <property name="title">
+      <string>Inward Store Note</string>
+     </property>
+     <addaction name="actionGenerate_ISN"/>
+     <addaction name="actionView_ISN"/>
+    </widget>
+    <widget class="QMenu" name="menuMaterial_Requistion_Slips">
+     <property name="title">
+      <string>Material Requistion Slips</string>
+     </property>
+     <addaction name="actionGenerate_MRS"/>
+     <addaction name="actionView_MRS"/>
+    </widget>
+    <addaction name="menuInward_Store_Note"/>
+    <addaction name="menuMaterial_Requistion_Slips"/>
+   </widget>
+   <widget class="QMenu" name="menuParts">
+    <property name="title">
+     <string>Parts</string>
+    </property>
+    <addaction name="actionNew_Part"/>
+    <addaction name="actionAdd_Part_QTY"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionBackup_Database"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenSSL_Version"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuProjects"/>
+   <addaction name="menuRecipients"/>
+   <addaction name="menuUser"/>
+   <addaction name="menuSlips"/>
+   <addaction name="menuParts"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionView_Invoices">
+   <property name="text">
+    <string>View Invoices</string>
+   </property>
+  </action>
+  <action name="actionView_Parts_Tracker">
+   <property name="text">
+    <string>View Parts Tracker</string>
+   </property>
+  </action>
+  <action name="actionView_Parts_Quantity">
+   <property name="text">
+    <string>View Parts Quantity</string>
+   </property>
+  </action>
+  <action name="actionView_Project">
+   <property name="text">
+    <string>View Project</string>
+   </property>
+  </action>
+  <action name="actionManage_Project">
+   <property name="text">
+    <string>Manage Project</string>
+   </property>
+  </action>
+  <action name="actionView_Recipients">
+   <property name="text">
+    <string>View Recipients</string>
+   </property>
+  </action>
+  <action name="actionManage_recipients">
+   <property name="text">
+    <string>Manage recipients</string>
+   </property>
+  </action>
+  <action name="actionChange_Login_Credentials">
+   <property name="text">
+    <string>Change Login Credentials</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Database">
+   <property name="text">
+    <string>Update Database</string>
+   </property>
+  </action>
+  <action name="actionAdd_Users">
+   <property name="text">
+    <string>Add Users</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionCloud_Backup">
+   <property name="text">
+    <string>Cloud Backup</string>
+   </property>
+  </action>
+  <action name="actionInward_Store_Note">
+   <property name="text">
+    <string>Inward Store Note</string>
+   </property>
+  </action>
+  <action name="actionMaterial_Requisition_Slips">
+   <property name="text">
+    <string>Material Requistion Slips</string>
+   </property>
+  </action>
+  <action name="actionCloud_Backup_2">
+   <property name="text">
+    <string>Cloud Backup</string>
+   </property>
+  </action>
+  <action name="actionGenerate_ISN">
+   <property name="text">
+    <string>Generate ISN</string>
+   </property>
+  </action>
+  <action name="actionView_ISN">
+   <property name="text">
+    <string>View ISN</string>
+   </property>
+  </action>
+  <action name="actionGenerate_MRS">
+   <property name="text">
+    <string>Generate MRS</string>
+   </property>
+  </action>
+  <action name="actionView_MRS">
+   <property name="text">
+    <string>View MRS</string>
+   </property>
+  </action>
+  <action name="actionNew_Part">
+   <property name="text">
+    <string>New Part</string>
+   </property>
+  </action>
+  <action name="actionDelete_Part">
+   <property name="text">
+    <string>Edit Part</string>
+   </property>
+  </action>
+  <action name="actionDelete_Part_2">
+   <property name="text">
+    <string>Delete Part</string>
+   </property>
+  </action>
+  <action name="actionAdd_Part_QTY">
+   <property name="text">
+    <string>Add Part QTY</string>
+   </property>
+  </action>
+  <action name="actionBackup_Database">
+   <property name="text">
+    <string>Backup Database</string>
+   </property>
+  </action>
+  <action name="actionOpenSSL_Version">
+   <property name="text">
+    <string>OpenSSL Version</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_User">
+   <property name="text">
+    <string>Add New User</string>
+   </property>
+  </action>
+  <action name="actionEdit_User">
+   <property name="text">
+    <string>Edit User</string>
+   </property>
+  </action>
+  <action name="actionDelete_User">
+   <property name="text">
+    <string>Delete User</string>
+   </property>
+  </action>
+  <action name="actionEdit_Part">
+   <property name="text">
+    <string>Edit_Part</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="asert.qrc"/>
+ </resources>
+ <connections/>
+</ui>

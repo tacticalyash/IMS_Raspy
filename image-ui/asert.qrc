@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/authorise.png</file>
+        <file>Images/may.ico</file>
+        <file>Images/back.png</file>
+        <file>Images/clear.png</file>
+        <file>Images/close.png</file>
+        <file>Images/comments.png</file>
+        <file>Images/date.png</file>
+        <file>Images/delete.png</file>
+        <file>Images/details.png</file>
+        <file>Images/edit.png</file>
+        <file>Images/export.png</file>
+        <file>Images/find_multiple.png</file>
+        <file>Images/import.png</file>
+        <file>Images/invoice.png</file>
+        <file>Images/issue.png</file>
+        <file>Images/LeftArrow.ico</file>
+        <file>Images/location.png</file>
+        <file>Images/login.png</file>
+        <file>Images/manufacturer.png</file>
+        <file>Images/new.png</file>
+        <file>Images/people-icon.png</file>
+        <file>Images/quantity.png</file>
+        <file>Images/refresh.png</file>
+        <file>Images/rename.png</file>
+        <file>Images/RightArrow.ico</file>
+        <file>Images/save.png</file>
+        <file>Images/save2.png</file>
+        <file>Images/search.png</file>
+        <file>Images/shift.png</file>
+        <file>Images/SplashScreen.png</file>
+        <file>Images/sql_delete.png</file>
+        <file>Images/sql_download.png</file>
+        <file>Images/sql_upload.png</file>
+        <file>Images/submit.png</file>
+        <file>may.ico</file>
+    </qresource>
+</RCC>

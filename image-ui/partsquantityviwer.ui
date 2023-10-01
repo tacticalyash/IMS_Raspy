@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>partsQuantityViwer</class>
+ <widget class="QDialog" name="partsQuantityViwer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1014</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parts Quantity Viewer</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_search">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="asert.qrc">
+           <normaloff>:/Images/search.png</normaloff>:/Images/search.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>90</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_refresh">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>14</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+         </property>
+         <property name="text">
+          <string>REFRESH</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_show_low_parts">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>SHOW LOW PARTS</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView">
+       <property name="styleSheet">
+        <string notr="true">QTableView {
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    padding: 0;
+    gridline-color: #d9d9d9;
+}
+
+QTableView::item {
+    padding: 5px;
+    border: none;
+}
+
+QTableView::item:selected {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #f2f2f2;
+    color: #333333;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    min-width: 80px;
+    min-height: 30px;
+    font-size: 18px;
+}
+
+QHeaderView::section:checked {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+
+QHeaderView::section:pressed {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 5px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 5px;
+    border-right: none;
+}
+
+QHeaderView::section:middle {
+    border-right: none;
+}
+
+QTableView::horizontalHeader {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+QTableView::verticalHeader {
+    border-right: 1px solid #d9d9d9;
+}
+
+QHeaderView::section:horizontal {
+    background-color: #e2e2e2;
+    border-top: 1px solid #9d9d9d;
+}
+
+QHeaderView::section:horizontal:pressed {
+    background-color: #3e7bb6;
+    color: #ffffff;
+}
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="asert.qrc"/>
+ </resources>
+ <connections/>
+</ui>

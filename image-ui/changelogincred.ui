@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>changeLoginCred</class>
+ <widget class="QDialog" name="changeLoginCred">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1193</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Change User Credentials</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>110</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER OLD USERNAME</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER NEW USERNAME</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER NEW PASSWORD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>170</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER OLD PASSWORD</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_del_user">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>100</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_new_user">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>100</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_new_pwd">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>160</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_old_pwd">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>160</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>280</y>
+     <width>93</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>CREATE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>280</y>
+     <width>93</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DELETE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>50</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Create New User</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>50</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Delete Credential Of Old User</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER NEW USER TYPE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>230</y>
+     <width>271</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ENTER OLD USER TYPE</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_type">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>220</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_old_type">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>221</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    animation: blink 0.5s alternate infinite; /* Add a blinking animation */
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

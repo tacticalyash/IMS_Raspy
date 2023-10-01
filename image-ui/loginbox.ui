@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loginBox</class>
+ <widget class="QDialog" name="loginBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>699</width>
+    <height>352</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>681</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>SignIn</string>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="asert.qrc">:/Images/login.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>250</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>250</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>403</x>
+      <y>122</y>
+      <width>258</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+
+QLineEdit:hover {
+    background-color: #e6f3ff; /* Set the hover background color to light blue */
+    
+}
+
+@keyframes blink {
+    from {
+        background-color: #e6f3ff;
+    }
+    to {
+        background-color: #ffffff;
+    }
+}
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>203</x>
+      <y>122</y>
+      <width>210</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>USERNAME:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string> PASSWORD:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="asert.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>viewISN</class>
+ <widget class="QDialog" name="viewISN">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1348</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>View ISN</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'PibotoLt'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_save_PDF">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Save as PDF</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Print_ISN">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Print</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Delete_ISN">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+
+	
+
+	font: 14pt &quot;Times New Roman&quot;;  
+
+		border-right: 1px solid #aaaaaa;
+
+		border-bottom: 1px solid #aaaaaa;
+
+
+
+}
+
+
+
+QPushButton:enabled {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+QPushButton:pressed {
+
+		background-color: green;
+
+		color: white;
+
+}
+
+
+
+
+
+QPushButton:hover:!pressed {
+
+		background-color: ORANGE;
+
+		color: red;
+
+}
+
+
+
+QPushButton:disabled {
+
+		background-color: #aaaaaa;
+
+		color: #ffffff;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Delete Current ISN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::MinimumExpanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>SELECT ISN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_isn_select">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 1px solid #a9a9a9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    background-color: #ffffff; /* Set the background color to white */
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border-color: #3e7bb6;
+}
+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Search">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="asert.qrc">
+         <normaloff>:/Images/search.png</normaloff>:/Images/search.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_ref">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="asert.qrc">
+         <normaloff>:/Images/refresh.png</normaloff>:/Images/refresh.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="asert.qrc"/>
+ </resources>
+ <connections/>
+</ui>
